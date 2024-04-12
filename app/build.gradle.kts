@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kroger.classapp"
+    namespace = "com.example.arkwiki"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.kroger.classapp"
+        applicationId = "com.example.arkwiki"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

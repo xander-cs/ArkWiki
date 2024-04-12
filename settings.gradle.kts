@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ClassApp"
+rootProject.name = "ArkWiki"
 include(":app")
  
