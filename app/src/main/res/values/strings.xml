@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ClassApp</string>
+    <string name="app_name">Ark Wiki</string>
     <string name="title_activity_main">Ark Wiki</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -43,4 +43,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="test">Test</string>
+    <string name="content_description">an image from the ark wiki</string>
 </resources>
