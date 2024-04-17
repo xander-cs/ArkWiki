@@ -13,7 +13,7 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/category_image"
+            android:id="@+id/card_image"
             android:layout_width="128dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -23,11 +23,11 @@
             android:layout_margin="16dp" />
 
         <TextView
-            android:id="@+id/category_title"
+            android:id="@+id/card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/category_image"
+            app:layout_constraintStart_toEndOf="@id/card_image"
             tools:text="@string/test"
             android:layout_margin="16dp" />
 
