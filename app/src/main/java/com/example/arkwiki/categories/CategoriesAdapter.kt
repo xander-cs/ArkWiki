@@ -33,8 +33,6 @@ class CategoriesAdapter(private val categories: List<Card>) : RecyclerView.Adapt
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view, parent, false)
 
         return CategoryViewHolder(view) { adapterPosition ->
-            val category = categories[adapterPosition]
-
             when (adapterPosition) {
                 2 -> {
                     val arkListFragment = ArkListFragment()

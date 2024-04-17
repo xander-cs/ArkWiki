@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.R
-import com.example.arkwiki.dinosaurs.arks.ArkAdapter
-import org.w3c.dom.Text
 
 class DinosaursAdapter(private val dinosaurs: List<Dinosaur>) : RecyclerView.Adapter<DinosaursAdapter.DinosaurViewHolder>() {
 //    class DinosaurViewHolder(

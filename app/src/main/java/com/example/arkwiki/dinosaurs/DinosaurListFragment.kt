@@ -1,7 +1,6 @@
 package com.example.arkwiki.dinosaurs
 
 import android.os.Bundle
-import android.text.style.TtsSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.arkwiki.R
-import com.example.arkwiki.dinosaurs.Dinosaur.*
 
 class DinosaurListFragment : Fragment() {
     override fun onCreateView(
