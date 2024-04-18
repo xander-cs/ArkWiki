@@ -25,7 +25,8 @@
         tools:text="Name"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:layout_margin="40dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
 
     <ImageView
         android:id="@+id/dinosaur_diet_image_detail"
@@ -36,7 +37,7 @@
         app:layout_constraintBottom_toTopOf="@id/dinosaur_temperament_detail"
         android:contentDescription="@string/content_description_2"
         tools:src="@tools:sample/avatars"
-        android:layout_marginStart="40dp" />
+        android:layout_marginStart="20dp" />
 
     <TextView
         android:id="@+id/dinosaur_diet_text_detail"
@@ -59,7 +60,8 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:text="@string/dinosaur_temperament"
         android:textSize="20sp"
-        android:layout_margin="40dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
 
     <TextView
         android:id="@+id/dinosaur_taming_detail"
@@ -69,7 +71,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/taming_method"
         android:textSize="20sp"
-        android:layout_margin="40dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
 
     <TextView
         android:id="@+id/dinosaur_food_detail"
@@ -79,6 +82,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/preferred_food"
         android:textSize="20sp"
-        android:layout_margin="40dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

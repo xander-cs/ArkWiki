@@ -5,7 +5,7 @@ data class Crafting(
     val style: String,
     val durability: String,
     val image: String,
-    val ingredients: String
+    val ingredients: List<Ingredient>
 )
 
 data class Ingredient(

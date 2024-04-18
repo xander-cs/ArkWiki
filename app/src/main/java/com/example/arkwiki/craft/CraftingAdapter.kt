@@ -11,6 +11,7 @@ import androidx.fragment.app.commit
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.R
+import com.google.gson.Gson
 
 class CraftingAdapter(private val craftingItems: List<Crafting>) : RecyclerView.Adapter<CraftingAdapter.CraftingViewHolder>() {
     class CraftingViewHolder(itemView: View, private val onCraftingClicked: (position: Int) -> Unit
@@ -37,8 +38,9 @@ class CraftingAdapter(private val craftingItems: List<Crafting>) : RecyclerView.
                 "style" to crafting.style,
                 "durability" to crafting.durability,
                 "image" to crafting.image,
-                "ingredients" to crafting.ingredients,
-            )
+            ).apply {
+                putString("ingredients", Gson().toJson(crafting.ingredients))
+            }
 
             val detailFragment = CraftingDetailFragment()
             detailFragment.arguments = bundle
