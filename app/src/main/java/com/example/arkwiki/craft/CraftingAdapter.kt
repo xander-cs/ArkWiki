@@ -11,7 +11,6 @@ import androidx.fragment.app.commit
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.R
-import com.example.arkwiki.dinosaurs.DinosaurDetailFragment
 
 class CraftingAdapter(private val craftingItems: List<Crafting>) : RecyclerView.Adapter<CraftingAdapter.CraftingViewHolder>() {
     class CraftingViewHolder(itemView: View, private val onCraftingClicked: (position: Int) -> Unit

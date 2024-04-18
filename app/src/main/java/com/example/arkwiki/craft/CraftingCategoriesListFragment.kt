@@ -16,7 +16,7 @@ class CraftingCategoriesListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_craft_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_list, container, false)
         val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
