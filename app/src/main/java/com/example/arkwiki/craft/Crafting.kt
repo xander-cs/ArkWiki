@@ -7,3 +7,9 @@ data class Crafting(
     val image: String,
     val ingredients: String
 )
+
+data class Ingredient(
+    val name: String,
+    val amount: Int,
+    val image: String,
+)

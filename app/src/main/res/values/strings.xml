@@ -55,5 +55,6 @@
     <string name="name">Name: %s</string>
     <string name="type">Type: %s</string>
     <string name="durability">Durability: %s</string>
-    <string name="ingredients">Ingredients: %s</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="ingredient">%s x %s</string>
 </resources>
