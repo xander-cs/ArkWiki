@@ -9,7 +9,7 @@ import com.example.arkwiki.dinosaurs.Type
 
 class ArkViewModel {
     /*
-    *   MAIN CATEGORIES
+    * MAIN CATEGORIES
     * */
 
     val categories = listOf(
@@ -21,16 +21,8 @@ class ArkViewModel {
 
 
     /*
-    *   CRAFTING
+    * CRAFTING
     * */
-
-    val craftingCategories = listOf(
-        Card("Clothing", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f3/Hide_Shirt.png/revision/latest?cb=20150615102418"),
-        Card("Tools", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217"),
-        Card("Structures", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d0/Storage_Box.png/revision/latest?cb=20150615115357"),
-        Card("Weapons", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c8/Wooden_Club.png/revision/latest?cb=20151003050839"),
-    )
-
     val clothing = listOf(
         Crafting("Cloth Hat", "Cloth", "25", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/42/Cloth_Hat.png/revision/latest?cb=20200518133005", listOf(
             Ingredient("Fiber", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132")
@@ -79,38 +71,81 @@ class ArkViewModel {
             Ingredient("Hide", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
             Ingredient("Fiber", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132")
         )),
-    )
 
-    val tools = listOf(
-        Crafting("Stone Pick", "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/16/Stone_Pick.png/revision/latest?cb=20150615120311", listOf(
-            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
-            Ingredient("Stone", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
-            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514")
+        Crafting("Ghillie Mask", "Utility", "60", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f2/Ghillie_Mask.png/revision/latest?cb=20160107050927", listOf(
+            Ingredient("Organic Polymer", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Hide", 7, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
         )),
-        Crafting("Stone Hatchet", "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d6/Stone_Hatchet.png/revision/latest?cb=20150615120258", listOf(
-            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
-            Ingredient("Flint", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
-            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+        Crafting("Ghillie Chestpiece", "Utility", "60", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/8b/Ghillie_Chestpiece.png/revision/latest?cb=20160107050903", listOf(
+            Ingredient("Organic Polymer", 6, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
         )),
-        Crafting("Torch", "Melee", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/b2/Torch.png/revision/latest?cb=20150615120234", listOf(
-            Ingredient("Flint", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
-            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
-            Ingredient("Stone", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+        Crafting("Ghillie Leggings", "Utility", "60", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/1a/Ghillie_Leggings.png/revision/latest?cb=20160107050940", listOf(
+            Ingredient("Organic Polymer", 8, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Hide", 12, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
         )),
-        Crafting("Chainsaw", "Tool", "80", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5f/Chainsaw_%28Scorched_Earth%29.png/revision/latest?cb=20160902000228", listOf(
-            Ingredient("Polymer", 75, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/81/Polymer.png/revision/latest?cb=20150615130200"),
-            Ingredient("Cementing Paste", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
-            Ingredient("Metal Ingot", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
-            Ingredient("Electronics", 25, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/dd/Electronics.png/revision/latest?cb=20150615100650")
+        Crafting("Ghillie Boots", "Utility", "60", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9b/Ghillie_Boots.png/revision/latest?cb=20160107050915", listOf(
+            Ingredient("Organic Polymer", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Hide", 6, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
         )),
-        Crafting("Camera", "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/80/Camera.png/revision/latest?cb=20161223220157", listOf(
-            Ingredient("Wood", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
-            Ingredient("Hide", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
-            Ingredient("Crystal", 240, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
-            Ingredient("Black Pearl", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4c/Black_Pearl.png/revision/latest?cb=20160410175730"),
-            Ingredient("Sap", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/73/Sap.png/revision/latest?cb=20160706145127"),
-            Ingredient("Obsidian", 150, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/23/Obsidian.png/revision/latest?cb=20150615125926"),
-            Ingredient("Metal Ingot", 140, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+        Crafting("Ghillie Gauntlets", "Utility", "60", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/bf/Ghillie_Gauntlets.png/revision/latest?cb=20160107050854", listOf(
+            Ingredient("Organic Polymer", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Hide", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("SCUBA Mask", "Utility", "45", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/SCUBA_Mask.png/revision/latest?cb=20150824110431", listOf(
+            Ingredient("Hide", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 6, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Crystal", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+            Ingredient("Silica Pearls", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4a/Silica_Pearls.png/revision/latest?cb=20150615130449"),
+        )),
+        Crafting("SCUBA Tank", "Utility", "45", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a9/SCUBA_Tank.png/revision/latest?cb=20160209203813", listOf(
+            Ingredient("Hide", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 8, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Metal Ingot", 14, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Organic Polymer", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+        )),
+        Crafting("SCUBA Leggings", "Utility", "45", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/7e/SCUBA_Leggings.png/revision/latest?cb=20150917013157", listOf(
+            Ingredient("Hide", 40, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Metal Ingot", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Organic Polymer", 40, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+        )),
+        Crafting("SCUBA Flippers", "Utility", "45", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/42/SCUBA_Flippers.png/revision/latest?cb=20150824110553", listOf(
+            Ingredient("Hide", 12, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Chitin", 12, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a1/Chitin.png/revision/latest?cb=20150614180439"),
+            Ingredient("Cementing Paste", 6, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+            Ingredient("Silica Pearls", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4a/Silica_Pearls.png/revision/latest?cb=20150615130449"),
+        )),
+        Crafting("Flak Helmet", "Armor", "120", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/e/ec/Flak_Helmet.png/revision/latest?cb=20150614181045", listOf(
+            Ingredient("Metal Ingot", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Hide", 7, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Flak Chestpiece", "Armor", "120", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/bf/Flak_Chestpiece.png/revision/latest?cb=20220414043038", listOf(
+            Ingredient("Metal Ingot", 13, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Flak Leggings", "Armor", "120", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/07/Flak_Leggings.png/revision/latest?cb=20150614180958", listOf(
+            Ingredient("Metal Ingot", 16, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Hide", 12, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Flak Boots", "Armor", "120", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/77/Flak_Boots.png/revision/latest?cb=20150614181106", listOf(
+            Ingredient("Metal Ingot", 8, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Hide", 6, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Flak Gauntlets", "Armor", "120", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f2/Flak_Gauntlets.png/revision/latest?cb=20150614181142", listOf(
+            Ingredient("Metal Ingot", 7, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Hide", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
         )),
     )
 
@@ -145,6 +180,135 @@ class ArkViewModel {
             Ingredient("Wood", 250, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
             Ingredient("Fiber", 125, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
             Ingredient("Hide", 75, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+
+        Crafting("Refining Forge", "Structure", "2,500", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/98/Refining_Forge.png/revision/latest?cb=20150615132657", listOf(
+            Ingredient("Stone", 125, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Flint", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+            Ingredient("Hide", 65, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Wood", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Fiber", 40, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Smithy", "Structure", "1,500", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/b9/Smithy.png/revision/latest?cb=20150615134739", listOf(
+            Ingredient("Metal Ingot", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Stone", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Wood", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Mortar and Pestle", "Structure", "1,000", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f0/Mortar_And_Pestle.png/revision/latest?cb=20150615115514", listOf(
+            Ingredient("Stone", 65, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Hide", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Cooking Pot", "Structure", "500", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f9/Cooking_Pot.png/revision/latest?cb=20150615095547", listOf(
+            Ingredient("Stone", 75, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Thatch", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+            Ingredient("Wood", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Flint", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+        )),
+        Crafting("Storage Box", "Structure", "500", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d0/Storage_Box.png/revision/latest?cb=20150615115357", listOf(
+            Ingredient("Wood", 25, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Thatch", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+            Ingredient("Fiber", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Training Dummy", "Structure", "400", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/49/Training_Dummy.png/revision/latest?cb=20160611103602", listOf(
+            Ingredient("Wood", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Fiber", 500, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Thatch", 500, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+        )),
+        Crafting("Ballista Turret", "Emplacement", "7,000", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/6/65/Ballista_Turret.png/revision/latest?cb=20150922223748", listOf(
+            Ingredient("Wood", 500, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Metal Ingot", 300, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Stone", 250, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Fiber", 200, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Thatch", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+            Ingredient("Hide", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Preserving Bin", "Structure", "600", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/09/Preserving_Bin.png/revision/latest?cb=20150618195400", listOf(
+            Ingredient("Stone", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Wood", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+            Ingredient("Fiber", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+    )
+
+    val tools = listOf(
+        Crafting("Stone Pick", "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/16/Stone_Pick.png/revision/latest?cb=20150615120311", listOf(
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Stone", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514")
+        )),
+        Crafting("Stone Hatchet", "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d6/Stone_Hatchet.png/revision/latest?cb=20150615120258", listOf(
+            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+            Ingredient("Flint", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+        )),
+        Crafting("Torch", "Melee", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/b2/Torch.png/revision/latest?cb=20150615120234", listOf(
+            Ingredient("Flint", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Stone", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/df/Wood.png/revision/latest?cb=20150615130549"),
+        )),
+        Crafting("Chainsaw", "Tool", "80", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5f/Chainsaw_%28Scorched_Earth%29.png/revision/latest?cb=20160902000228", listOf(
+            Ingredient("Polymer", 75, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/81/Polymer.png/revision/latest?cb=20150615130200"),
+            Ingredient("Cementing Paste", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+            Ingredient("Metal Ingot", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Electronics", 25, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/dd/Electronics.png/revision/latest?cb=20150615100650")
+        )),
+        Crafting("Camera", "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/80/Camera.png/revision/latest?cb=20161223220157", listOf(
+            Ingredient("Wood", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Crystal", 240, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+            Ingredient("Black Pearl", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4c/Black_Pearl.png/revision/latest?cb=20160410175730"),
+            Ingredient("Sap", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/73/Sap.png/revision/latest?cb=20160706145127"),
+            Ingredient("Obsidian", 150, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/23/Obsidian.png/revision/latest?cb=20150615125926"),
+            Ingredient("Metal Ingot", 140, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+        )),
+
+        Crafting("Metal Pick",  "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217", listOf(
+            Ingredient("Metal Ingot", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Metal Hatchet",  "Tool", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a6/Metal_Hatchet.png/revision/latest?cb=20150615120207", listOf(
+            Ingredient("Metal Ingot", 8, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Mining Drill",  "Tool", "700", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/30/Mining_Drill_%28Genesis_Part_1%29.png/revision/latest?cb=20200226062838", listOf(
+            Ingredient("Organic Polymer", 132, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/13/Organic_Polymer.png/revision/latest?cb=20160424034337"),
+            Ingredient("Metal Ingot", 482, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Crystal", 180, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+            Ingredient("Cementing Paste", 120, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+            Ingredient("Black Pearl", 36, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4c/Black_Pearl.png/revision/latest?cb=20160410175730"),
+        )),
+        Crafting("Fishing Rod",  "Tool", "100", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c7/Fishing_Rod.png/revision/latest?cb=20160728174155", listOf(
+            Ingredient("Wood", 12, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Fiber", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Thatch", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
+        )),
+        Crafting("Spyglass",  "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c1/Spyglass.png/revision/latest?cb=20150618204128", listOf(
+            Ingredient("Wood", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Crystal", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+        )),
+        Crafting("Compass",  "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/92/Compass.png/revision/latest?cb=20150615095422", listOf(
+            Ingredient("Metal", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/e/e1/Metal.png/revision/latest?cb=20150615123338"),
+            Ingredient("Flint", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+            Ingredient("Fiber", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Magnifying Glass",  "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5f/Magnifying_Glass.png/revision/latest?cb=20220905113952", listOf(
+            Ingredient("Wood", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Fiber", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Crystal", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+            Ingredient("Obsidian", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/23/Obsidian.png/revision/latest?cb=20150615125926"),
+            Ingredient("Metal Ingot", 8, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+        )),
+        Crafting("Paintbrush",  "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c4/Paintbrush.png/revision/latest?cb=20150615120520", listOf(
+            Ingredient("Wood", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Thatch", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/51/Thatch.png/revision/latest?cb=20150615130514"),
         )),
     )
 
@@ -183,13 +347,68 @@ class ArkViewModel {
             Ingredient("Cementing Paste", 35, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
             Ingredient("Metal Ingot", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
         )),
+
+        Crafting("Flamethrower", "Gun", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/47/Flamethrower_%28Scorched_Earth%29.png/revision/latest?cb=20160901234619", listOf(
+            Ingredient("Polymer", 75, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/81/Polymer.png/revision/latest?cb=20150615130200"),
+            Ingredient("Cementing Paste", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+            Ingredient("Metal Ingot", 35, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Sulfur", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/cf/Sulfur_%28Scorched_Earth%29.png/revision/latest?cb=20160901225856"),
+            Ingredient("Electronics", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/dd/Electronics.png/revision/latest?cb=20150615100650"),
+        )),
+        Crafting("Minigun", "Gun", "200", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2b/Minigun_%28Genesis_Part_2%29.png/revision/latest?cb=20210603191503", listOf(
+            Ingredient("Polymer", 175, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/81/Polymer.png/revision/latest?cb=20150615130200"),
+            Ingredient("Metal Ingot", 500, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Cementing Paste", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+            Ingredient("Electronics", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/dd/Electronics.png/revision/latest?cb=20150615100650"),
+        )),
+        Crafting("Lance", "Melee", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f8/Lance.png/revision/latest?cb=20170131150550", listOf(
+            Ingredient("Flint", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/2e/Flint.png/revision/latest?cb=20150615101007"),
+            Ingredient("Hide", 70, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Pelt", 70, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Pelt.png/revision/latest?cb=20150929052115"),
+            Ingredient("Fiber", 120, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Obsidian", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/23/Obsidian.png/revision/latest?cb=20150615125926"),
+            Ingredient("Metal Ingot", 260, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+        )),
+        Crafting("Pike", "Melee", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Pike.png/revision/latest?cb=20150615120808", listOf(
+            Ingredient("Metal Ingot", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Wood", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+        )),
+        Crafting("Boomerang", "Ranged", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/17/Boomerang_%28Scorched_Earth%29.png/revision/latest?cb=20170104111935", listOf(
+            Ingredient("Fiber", 15, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Wood", 3, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("sand", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/0c/Sand_%28Scorched_Earth%29.png/revision/latest?cb=20160901230939"),
+        )),
+        Crafting("Slingshot", "Ranged", "40", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/3f/Slingshot.png/revision/latest?cb=20150615120746", listOf(
+            Ingredient("Hide", 1, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Wood", 5, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Fiber", 20, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+        )),
+        Crafting("Flare Gun", "Gun", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/57/Flare_Gun.png/revision/latest?cb=20150615101356", listOf(
+            Ingredient("Wood", 4, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Fiber", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132"),
+            Ingredient("Sparkpowder", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/56/Sparkpowder.png/revision/latest?cb=20150615114856"),
+            Ingredient("Gunpowder", 2, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/ae/Gunpowder.png/revision/latest?cb=20150701125817"),
+        )),
+        Crafting("Fabricated Sniper Rifle", "Gun", "70", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9e/Fabricated_Sniper_Rifle.png/revision/latest?cb=20151021221251", listOf(
+            Ingredient("Polymer", 115, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/81/Polymer.png/revision/latest?cb=20150615130200"),
+            Ingredient("Metal Ingot", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
+            Ingredient("Cementing Paste", 110, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
+        )),
+    )
+
+    val craftingCategories = listOf(
+        Card("Clothing", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f3/Hide_Shirt.png/revision/latest?cb=20150615102418"),
+        Card("Structures", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d0/Storage_Box.png/revision/latest?cb=20150615115357"),
+        Card("Tools", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217"),
+        Card("Weapons", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c8/Wooden_Club.png/revision/latest?cb=20151003050839"),
     )
 
 
     /*
-    *   DINOSAURS
+    * DINOSAURS
     * */
-
+    
     val arks = listOf(
         Card("All", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5b/ARK_Icon.png/revision/latest?cb=20190106013307"),
         Card("Island", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/04/The_Island_Topographic_Map.jpg/revision/latest/scale-to-width-down/1000?cb=20181020211505"),
@@ -237,6 +456,7 @@ class ArkViewModel {
         Dinosaur("Titanosaur", Diet.HERBIVORE, "Docile", "N/A", "https://www.dododex.com/media/creature/titanosaur.png", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/b7/Titanosaursound.ogg/revision/latest?cb=20180403215454", listOf(Type.ISLAND, Type.CENTER, Type.DESERT, Type.NORSE, Type.CRYSTALLINE, Type.LOST)),
         Dinosaur("Triceratops", Diet.HERBIVORE, "Docile", "Mejoberry", "https://www.dododex.com/media/creature/triceratops.png", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a6/PW_trike_voc_mumble_01.OGG/revision/latest?cb=20150704192205", listOf(Type.ISLAND, Type.CENTER, Type.NORSE, Type.CORRUPTED, Type.GRAND, Type.CRYSTALLINE, Type.COLONY, Type.LOST)),
         Dinosaur("Troodon", Diet.CARNIVORE, "Nocturnally Aggressive", "Live Creatures", "https://www.dododex.com/media/creature/troodon.png", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5f/Troodonsound.ogg/revision/latest?cb=20180403215555", listOf(Type.ISLAND, Type.CENTER, Type.DESERT, Type.NORSE, Type.CORRUPTED, Type.GRAND, Type.CRYSTALLINE, Type.COLONY, Type.LOST)),
+        Dinosaur("Wyvern", Diet.CARNIVORE, "Aggressive", "N/A", "https://www.dododex.com/media/creature/wyvern.png", "", listOf(Type.DESERT, Type.NORSE, Type.GRAND, Type.LOST)),
         Dinosaur("Yutyrannus", Diet.CARNIVORE, "Aggressive", "Raw Mutton", "https://www.dododex.com/media/creature/yutyrannus.png", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/02/Yutyrannussound.ogg/revision/latest?cb=20180403215848", listOf(Type.ISLAND, Type.CENTER, Type.DESERT, Type.NORSE, Type.CORRUPTED, Type.GRAND, Type.CRYSTALLINE, Type.COLONY, Type.LOST)),
     )
 }

@@ -48,12 +48,12 @@ class CraftingCategoriesAdapter(private val craft: List<Card>) : RecyclerView.Ad
                 }
                 1 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(viewModel.tools))
+                        putString("craftingItems", Gson().toJson(viewModel.structures))
                     }
                 }
                 2 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(viewModel.structures))
+                        putString("craftingItems", Gson().toJson(viewModel.tools))
                     }
                 }
                 3 -> {
