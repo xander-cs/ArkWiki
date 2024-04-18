@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.arkwiki.Card
 import com.example.arkwiki.R
 import com.example.arkwiki.model.ArkViewModel
 

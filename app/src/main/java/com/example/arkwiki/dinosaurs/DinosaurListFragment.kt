@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.arkwiki.R
+import com.example.arkwiki.model.ArkViewModel
 
 class DinosaurListFragment : Fragment() {
     override fun onCreateView(
@@ -19,6 +20,8 @@ class DinosaurListFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
+        val viewModel = ArkViewModel()
+
         var toPass = mutableListOf<Dinosaur>()
 
         if (arguments != null)
@@ -27,11 +30,11 @@ class DinosaurListFragment : Fragment() {
 
             if (typeString == "All")
             {
-                toPass = dinosaurs.toMutableList()
+                toPass = viewModel.dinosaurs.toMutableList()
             } else
             {
                 val type = stringToType(typeString)
-                for(dinosaur in dinosaurs)
+                for(dinosaur in viewModel.dinosaurs)
                 {
                     if (dinosaur.types.contains(type))
                     {
