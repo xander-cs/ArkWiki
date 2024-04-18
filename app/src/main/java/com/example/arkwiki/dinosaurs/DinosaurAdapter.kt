@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.R
 
-class DinosaursAdapter(private val dinosaurs: List<Dinosaur>) : RecyclerView.Adapter<DinosaursAdapter.DinosaurViewHolder>() {
+class DinosaurAdapter(private val dinosaurs: List<Dinosaur>) : RecyclerView.Adapter<DinosaurAdapter.DinosaurViewHolder>() {
 
     class DinosaurViewHolder(itemView: View, private val onDinosaurClicked: (position: Int) -> Unit
     ) : RecyclerView.ViewHolder(itemView)

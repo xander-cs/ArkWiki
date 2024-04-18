@@ -50,4 +50,10 @@
     <string name="taming_method">Taming Method: %s</string>
     <string name="preferred_food">Preferred Food: %s</string>
     <string name="content_description_2">an image of what the dinosaur eats</string>
+    <string name="diet">Diet</string>
+    <string name="image">content description</string>
+    <string name="name">Name: %s</string>
+    <string name="type">Type: %s</string>
+    <string name="durability">Durability: %s</string>
+    <string name="ingredients">Ingredients: %s</string>
 </resources>

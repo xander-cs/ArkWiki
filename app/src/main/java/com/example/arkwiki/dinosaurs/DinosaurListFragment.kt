@@ -41,7 +41,7 @@ class DinosaurListFragment : Fragment() {
             }
         }
 
-        val adapter = DinosaursAdapter(toPass)
+        val adapter = DinosaurAdapter(toPass)
         recyclerView.adapter = adapter
 
         return view

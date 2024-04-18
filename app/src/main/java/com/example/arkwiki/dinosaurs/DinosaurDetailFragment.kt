@@ -1,6 +1,5 @@
 package com.example.arkwiki.dinosaurs
 
-import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater

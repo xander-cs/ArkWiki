@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.Card
 import com.example.arkwiki.R
+import com.example.arkwiki.craft.CraftingCategoriesListFragment
 import com.example.arkwiki.dinosaurs.arks.ArkListFragment
 
 class CategoriesAdapter(private val categories: List<Card>) : RecyclerView.Adapter<CategoriesAdapter.CategoryViewHolder>() {
@@ -34,6 +35,16 @@ class CategoriesAdapter(private val categories: List<Card>) : RecyclerView.Adapt
 
         return CategoryViewHolder(view) { adapterPosition ->
             when (adapterPosition) {
+                1 -> {
+                    val arkCraftFragment = CraftingCategoriesListFragment()
+
+                    val activity = view.context as AppCompatActivity
+                    activity.supportFragmentManager.commit {
+                        setReorderingAllowed(true)
+                        replace(R.id.fragment_container_view, arkCraftFragment)
+                        addToBackStack(null)
+                    }
+                }
                 2 -> {
                     val arkListFragment = ArkListFragment()
 
