@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="24dp">
 
         <ImageView
             android:id="@+id/card_image"
@@ -18,9 +18,9 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:contentDescription="@string/content_description"
-            tools:src="@tools:sample/avatars"
-            android:layout_margin="16dp" />
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/card_title"
@@ -28,7 +28,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/card_image"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:text="@string/test"
+            android:textSize="24sp"
+            android:textStyle="bold"
             android:layout_margin="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,4 +45,9 @@
     </string>
     <string name="test">Test</string>
     <string name="content_description">an image from the ark wiki</string>
+    <string name="dinosaur_image_description">an image of a dinosaur</string>
+    <string name="dinosaur_temperament">Temperament: %s</string>
+    <string name="taming_method">Taming Method: %s</string>
+    <string name="preferred_food">Preferred Food: %s</string>
+    <string name="content_description_2">an image of what the dinosaur eats</string>
 </resources>
