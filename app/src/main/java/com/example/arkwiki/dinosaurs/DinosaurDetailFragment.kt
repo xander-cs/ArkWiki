@@ -27,7 +27,6 @@ class DinosaurDetailFragment : Fragment() {
             val name = requireArguments().getString("name")
             val diet = requireArguments().getString("diet")
             val temperament = requireArguments().getString("temperament")
-            val taming = requireArguments().getString("taming")
             val food = requireArguments().getString("food")
             val image = requireArguments().getString("image")
             val roar = requireArguments().getString("roar")
@@ -40,7 +39,6 @@ class DinosaurDetailFragment : Fragment() {
             view.findViewById<TextView>(R.id.dinosaur_name_detail).text = name
             view.findViewById<TextView>(R.id.dinosaur_diet_text_detail).text = diet
             view.findViewById<TextView>(R.id.dinosaur_temperament_detail).text = resources.getString(R.string.dinosaur_temperament, temperament)
-            view.findViewById<TextView>(R.id.dinosaur_taming_detail).text = resources.getString(R.string.taming_method, taming)
             view.findViewById<TextView>(R.id.dinosaur_food_detail).text = resources.getString(R.string.preferred_food, food)
 
             view.findViewById<ImageView>(R.id.dinosaur_image_detail).setOnClickListener {

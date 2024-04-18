@@ -64,21 +64,10 @@
         android:layout_marginStart="20dp" />
 
     <TextView
-        android:id="@+id/dinosaur_taming_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/dinosaur_temperament_detail"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/taming_method"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="20dp" />
-
-    <TextView
         android:id="@+id/dinosaur_food_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/dinosaur_taming_detail"
+        app:layout_constraintTop_toBottomOf="@id/dinosaur_temperament_detail"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/preferred_food"
         android:textSize="20sp"

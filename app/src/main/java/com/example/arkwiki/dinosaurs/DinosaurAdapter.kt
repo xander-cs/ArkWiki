@@ -37,7 +37,6 @@ class DinosaurAdapter(private val dinosaurs: List<Dinosaur>) : RecyclerView.Adap
                 "name" to dinosaur.name,
                 "diet" to dinosaur.diet.toString(),
                 "temperament" to dinosaur.temperament,
-                "taming" to dinosaur.tamingMethod,
                 "food" to dinosaur.preferredFood,
                 "image" to dinosaur.image,
                 "roar" to dinosaur.roar,
