@@ -131,6 +131,7 @@
             app:layout_constraintTop_toBottomOf="@id/ro_title_detail"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:textSize="20sp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
