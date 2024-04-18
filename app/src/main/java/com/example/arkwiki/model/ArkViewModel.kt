@@ -8,12 +8,29 @@ import com.example.arkwiki.dinosaurs.Dinosaur
 import com.example.arkwiki.dinosaurs.Type
 
 class ArkViewModel {
+    /*
+    *   MAIN CATEGORIES
+    * */
+
     val categories = listOf(
-        Card("Breeding &\nTaming", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a3/Eggs.png/revision/latest?cb=20200807154254"),
+        Card("Breeding", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a3/Eggs.png/revision/latest?cb=20200807154254"),
         Card("Crafting", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/b9/Smithy.png/revision/latest?cb=20150615134739"),
         Card("Dinosaurs", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/8d/Alpha_T-Rex.png/revision/latest?cb=20190228120718"),
+        Card("Taming", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/cc/Box_o%27_Chocolates.png/revision/latest?cb=20160228212112"),
     )
-    
+
+
+    /*
+    *   CRAFTING
+    * */
+
+    val craftingCategories = listOf(
+        Card("Clothing", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f3/Hide_Shirt.png/revision/latest?cb=20150615102418"),
+        Card("Tools", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217"),
+        Card("Structures", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d0/Storage_Box.png/revision/latest?cb=20150615115357"),
+        Card("Weapons", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c8/Wooden_Club.png/revision/latest?cb=20151003050839"),
+    )
+
     val clothing = listOf(
         Crafting("Cloth Hat", "Cloth", "25", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/42/Cloth_Hat.png/revision/latest?cb=20200518133005", listOf(
             Ingredient("Fiber", 10, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/45/Fiber.png/revision/latest?cb=20200518133132")
@@ -85,6 +102,15 @@ class ArkViewModel {
             Ingredient("Cementing Paste", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/03/Cementing_Paste.png/revision/latest?cb=20180801020251"),
             Ingredient("Metal Ingot", 50, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
             Ingredient("Electronics", 25, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/dd/Electronics.png/revision/latest?cb=20150615100650")
+        )),
+        Crafting("Camera", "Tool", "N/A", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/80/Camera.png/revision/latest?cb=20161223220157", listOf(
+            Ingredient("Wood", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d4/Stone.png/revision/latest?cb=20150615120930"),
+            Ingredient("Hide", 30, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/96/Hide.png/revision/latest?cb=20150615102457"),
+            Ingredient("Crystal", 240, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/31/Crystal.png/revision/latest?cb=20150618193219"),
+            Ingredient("Black Pearl", 80, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/4c/Black_Pearl.png/revision/latest?cb=20160410175730"),
+            Ingredient("Sap", 100, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/73/Sap.png/revision/latest?cb=20160706145127"),
+            Ingredient("Obsidian", 150, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/23/Obsidian.png/revision/latest?cb=20150615125926"),
+            Ingredient("Metal Ingot", 140, "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/3/37/Metal_Ingot.png/revision/latest?cb=20150615125857"),
         )),
     )
 
@@ -159,13 +185,11 @@ class ArkViewModel {
         )),
     )
 
-    val craftingCategories = listOf(
-        Card("Clothing", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/f/f3/Hide_Shirt.png/revision/latest?cb=20150615102418"),
-        Card("Tools", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217"),
-        Card("Structures", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/d0/Storage_Box.png/revision/latest?cb=20150615115357"),
-        Card("Weapons", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/c8/Wooden_Club.png/revision/latest?cb=20151003050839"),
-    )
-    
+
+    /*
+    *   DINOSAURS
+    * */
+
     val arks = listOf(
         Card("All", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/5b/ARK_Icon.png/revision/latest?cb=20190106013307"),
         Card("Island", "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/0/04/The_Island_Topographic_Map.jpg/revision/latest/scale-to-width-down/1000?cb=20181020211505"),
