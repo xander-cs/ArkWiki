@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.arkwiki.Card
 import com.example.arkwiki.R
+import com.example.arkwiki.model.ArkViewModel
 import com.google.gson.Gson
 
 class CraftingCategoriesAdapter(private val craft: List<Card>) : RecyclerView.Adapter<CraftingCategoriesAdapter.CraftViewHolder>() {
@@ -34,28 +35,30 @@ class CraftingCategoriesAdapter(private val craft: List<Card>) : RecyclerView.Ad
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CraftViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view, parent, false)
 
+        val viewModel = ArkViewModel()
+
         return CraftViewHolder(view) { adapterPosition ->
             val craftingListFragment = CraftingListFragment()
 
             when (adapterPosition) {
                 0 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(clothing))
+                        putString("craftingItems", Gson().toJson(viewModel.clothing))
                     }
                 }
                 1 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(tools))
+                        putString("craftingItems", Gson().toJson(viewModel.tools))
                     }
                 }
                 2 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(structures))
+                        putString("craftingItems", Gson().toJson(viewModel.structures))
                     }
                 }
                 3 -> {
                     craftingListFragment.arguments = Bundle().apply {
-                        putString("craftingItems", Gson().toJson(weapons))
+                        putString("craftingItems", Gson().toJson(viewModel.weapons))
                     }
                 }
             }
