@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.arkwiki.dinosaurs
 
 import android.media.MediaPlayer
@@ -10,6 +12,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.arkwiki.R
+import com.google.android.exoplayer2.ExoPlayer.Builder
+import com.google.android.exoplayer2.MediaItem.*
 
 class DinosaurDetailFragment : Fragment() {
     private lateinit var mediaPlayer: MediaPlayer
@@ -41,17 +45,13 @@ class DinosaurDetailFragment : Fragment() {
             view.findViewById<TextView>(R.id.dinosaur_temperament_detail).text = resources.getString(R.string.dinosaur_temperament, temperament)
             view.findViewById<TextView>(R.id.dinosaur_food_detail).text = resources.getString(R.string.preferred_food, food)
 
+            val player = Builder(requireContext()).build()
+            val mediaItem = fromUri(roar.toString())
             view.findViewById<ImageView>(R.id.dinosaur_image_detail).setOnClickListener {
-                if (!mediaPlayer.isPlaying) {
-                    mediaPlayer.apply {
-                        reset()
-                        setDataSource(roar)
-                        prepareAsync()
-                        setOnPreparedListener {
-                            it.start()
-                        }
-                    }
-                }
+                player.setMediaItem(mediaItem)
+                player.prepare()
+                player.play()
+
             }
         }
 

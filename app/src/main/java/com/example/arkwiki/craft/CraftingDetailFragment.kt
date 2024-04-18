@@ -35,7 +35,7 @@ class CraftingDetailFragment : Fragment() {
 
             Glide.with(this)
                 .load(image)
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.ic_launcher_foreground)
                 .into(view.findViewById(R.id.craft_image_detail))
 
             view.findViewById<TextView>(R.id.craft_name_detail).text = name
